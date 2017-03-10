@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_checkout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="shueching.mobileapp.CheckoutActivity">
+
+    <ListView
+            android:id="@+id/listProductLineItems"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+    </ListView>
+
+    <TextView android:id="@+id/textViewTotal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:layout_marginTop="10dp" android:layout_below="@id/listProductLineItems"/>
+
+    <Button android:id="@+id/buttonPurchase" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Check Out"
+            android:onClick="onCheckout" android:layout_below="@id/textViewTotal"/>
+
+    <Button android:id="@+id/buttonViewCategory" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ViewCategory"
+            android:onClick="onSendViewCategory" android:layout_below="@id/buttonPurchase"/>
+</RelativeLayout>

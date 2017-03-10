@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">My store!</string>
+    <string name="facebook_app_id">1122502804453578</string>
+    <string name="app_event_prompt">Choose an App event</string>
+    <string name="currency_prompt">Choose a currency</string>
+
+    <string-array name="app_event_arrays">
+        <item>ViewContent</item>
+        <item>AddToCart</item>
+        <item>Purchase</item>
+    </string-array>
+
+    <string-array name="currency_arrays">
+        <item>USD</item>
+        <item>SGD</item>
+        <item>JPY</item>
+    </string-array>
+    <string name="title_activity_offer">OfferActivity</string>
+</resources>
